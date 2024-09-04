@@ -45,22 +45,22 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="#about" className="text-gray-400 hover:text-white">
+              <Link href="/#about" className="text-gray-400 hover:text-white">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#tournaments" className="text-gray-400 hover:text-white">
+              <Link href="/#tournaments" className="text-gray-400 hover:text-white">
                 Tournaments
               </Link>
             </li>
             <li>
-              <Link href="#teams" className="text-gray-400 hover:text-white">
+              <Link href="/#teams" className="text-gray-400 hover:text-white">
                 Teams
               </Link>
             </li>
             <li>
-              <Link href="#contact" className="text-gray-400 hover:text-white">
+              <Link href="/#contact" className="text-gray-400 hover:text-white">
                 Contact
               </Link>
             </li>
@@ -108,22 +108,22 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#about" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
+              <Link href="/#about" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 About
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#tournaments" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
+              <Link href="/#tournaments" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 Tournaments
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#teams" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
+              <Link href="/#teams" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 Teams
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#contact" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
+              <Link href="/#contact" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 Contact
               </Link>
             </li>
