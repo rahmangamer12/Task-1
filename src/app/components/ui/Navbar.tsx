@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation'; 
+import { useRouter } from 'next/navigation';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -14,11 +14,11 @@ const Navbar = () => {
   };
 
   const handleLoginClick = () => {
-    router.push("/#loginpage"); // Navigate to the login page
+    router.push("/login"); // Navigate to the login page
   };
 
   const handleSignupClick = () => {
-    router.push("/#signup"); // Navigate to the signup page
+    router.push("/signup"); // Navigate to the signup page
   };
 
   return (
@@ -88,9 +88,11 @@ const Navbar = () => {
       </header>
 
       <div
-        className={`fixed top-0 right-0 h-full bg-[#0a0b47] w-2/4 md:w-1/2 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full bg-[#0a0b47] transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } z-50`}
+        } z-50 ${
+          isMenuOpen ? 'w-3/4 md:w-1/2' : '' // Adjusts width based on screen size
+        }`}
       >
         <div className="flex justify-between items-center p-4">
           <h2 className="text-white text-lg">Menu</h2>
@@ -101,27 +103,27 @@ const Navbar = () => {
         <nav className="flex flex-col items-center gap-4 mt-10">
           <ul>
             <li className="mb-4">
-              <Link href="/" className="text-gray-400 hover:text-white">
+              <Link href="/" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 Home
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#about" className="text-gray-400 hover:text-white">
+              <Link href="#about" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 About
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#tournaments" className="text-gray-400 hover:text-white">
+              <Link href="#tournaments" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 Tournaments
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#teams" className="text-gray-400 hover:text-white">
+              <Link href="#teams" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 Teams
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#contact" className="text-gray-400 hover:text-white">
+              <Link href="#contact" className="text-gray-400 hover:text-white" onClick={toggleMenu}>
                 Contact
               </Link>
             </li>

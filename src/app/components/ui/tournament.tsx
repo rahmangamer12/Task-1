@@ -41,7 +41,7 @@ const TournamentsPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-[#0a0b47] text-white min-h-screen" id="tournaments">
+    <div className="tournaments bg-[#0a0b47] text-white min-h-screen" id="tournaments">
       {/* Hero Section */}
       <section className="relative flex items-center justify-center h-screen">
         <Image

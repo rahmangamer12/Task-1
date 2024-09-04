@@ -46,7 +46,7 @@ const JoinTournament = () => {
   };
 
   return (
-    <div className="bg-blue-900 h-screen flex justify-center items-center">
+    <div className="bg-blue-900 min-h-screen flex justify-center items-center">
       <div className="bg-blue-800 p-8 rounded-lg shadow-lg max-w-lg w-full">
         <h2 className="text-3xl font-semibold text-center mb-6 text-white">Join a Tournament</h2>
         <form onSubmit={handleJoin} className="space-y-4">
@@ -153,8 +153,7 @@ const JoinTournament = () => {
             >
               <option value="">Select...</option>
               <option value="amateur">Amateur</option>
-              <option value="professional">Professional</option>
-            </select>
+              <option value="professional">Professional</option></select>
           </div>
 
           <div>

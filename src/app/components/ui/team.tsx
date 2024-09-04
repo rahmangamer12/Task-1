@@ -57,7 +57,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="bg-[#0a0b47] text-white min-h-screen py-16" id='teams'>
+    <div className="teams bg-[#0a0b47] text-white min-h-screen py-16" id='teams'>
       <div className="container mx-auto px-4">
         <h1 className="text-6xl font-bold text-center mb-16 tracking-wider">Choose Your Friend</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const AboutPage = () => {
   return (
-    <div className="bg-[#141983] min-h-screen py-12 px-6 md:px-12" id='about'>
+    <div className="about bg-[#141983] min-h-screen py-12 px-6 md:px-12" id='about'>
       <div className="max-w-7xl mx-auto">
         {/* Hero Section for About Page */}
         <section className="text-center mb-12">

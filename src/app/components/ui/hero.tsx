@@ -6,7 +6,7 @@ const HeroSection = () => {
   const router = useRouter();
 
   const handleJoinTournamentClick = () => {
-    router.push('/JoinTournament');
+    router.push('/tournament');
   };
 
   return (
